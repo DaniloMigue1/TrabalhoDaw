@@ -1,47 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<title>Formulário</title>
-	</head>
-	
-	<body id="corpo">
-		<h1>Cadastro de Personagem</h1>
+<head>
+<meta charset="utf-8">
+<title>Formulário</title>
+</head>
 
-		<form action="Cadastro.java" method="post">
-			<fieldset>
-				<legend>Personagem</legend>
+<body id="corpo">
+	<h1>Cadastro de Personagem</h1>
 
-				<p><label for="nome">Nome:</label>
-					<input type="text" id="nome" size="25" maxlength="30" placeholder="Nome completo" autofocus>
-				</p>
+	<form action="Cadastro.java" method="post">
+		<fieldset>
+			<legend>Personagem</legend>
 
-				
-					<legend>Sexo:</legend>
-
-					<input type="radio" id="masculino" name="sexo" value="M">
-					<label for="masculino">Masculino</label>
-
-					<input type="radio" id="feminino" name="sexo" value="F">
-					<label for="feminino">Feminino</label>
-				
-					<p><label for="pais">País:</label>
-					<select id="pais">
-						<option>Escolha o País</option>
-							<option value="BR">Brasil</option>
-							<option value="US">Estados Unidos</option>
-							<option value="DV">Davi</option>
-							<option value="DM">Danilo</option>
-							<option value="ES">Espírito Santo</option>
-							<option value="MG">Minas Gerais</option>
-							<option value="RJ">Rio de Janeiro</option>
-							<option value="SP">São Paulo</option>
-					</select>
-			</fieldset>
-
-			
-				">
+			<p>
+				<label for="nome">Nome:</label> <input type="text" id="nome"
+					size="25" maxlength="30" placeholder="Nome completo" autofocus>
 			</p>
-		</form>
-	</body>
+
+
+			<legend>Sexo:</legend>
+
+			<input type="radio" id="masculino" name="sexo" value="M"> <label
+				for="masculino">Masculino</label> <input type="radio" id="feminino"
+				name="sexo" value="F"> <label for="feminino">Feminino</label>
+
+			<p>
+				<label for="pais">País:</label> <select id="pais">
+					<option>Escolha o País</option>
+					<option value="BR">Brasil</option>
+					<option value="US">Estados Unidos</option>
+					<option value="DV">Davi</option>
+					<option value="DM">Danilo</option>
+
+				</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Golpes</legend>
+
+			<p>
+				<label for="nivel">Chute Fraco:</label> 1 <input type="range"
+					id="nivel" min="1" max="5" step="1"> 5
+			</p>
+
+			<p>
+				<label for="nivel">Chute Forte:</label> 6 <input type="range"
+					id="nivel" min="6" max="10" step="1"> 10
+			</p>
+
+			<p>
+				<label for="nivel">Soco Fraco:</label> 1 <input type="range"
+					id="nivel" min="1" max="5" step="1"> 5
+			</p>
+
+			<p>
+				<label for="nivel">Soco Forte:</label> 6 <input type="range"
+					id="nivel" min="6" max="10" step="1"> 10
+			</p>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Magia</legend>
+
+			<p>
+				<label for="nome">Nome da Magia:</label> <input type="text"
+					id="nome" size="25" maxlength="30" placeholder="Nome da magia"
+					autofocus>
+			</p>
+
+			<p>
+				<label for="descricao">Descrição da magia:</label><br>
+				<textarea id="descricao" cols="45" rows="5"></textarea>
+			</p>
+
+
+			<div data-app="product.quantity" id="quantidade">
+				<label>Potencia:</label> <input type="button" id="minus" value='-'
+					onclick="process(-1)" /> <input id="quant" name="quant"
+					class="text" size="1" type="text" value="1" maxlength="100" /> <input
+					type="button" id="plus" value='+' onclick="process(1)">
+
+				<button type="submit">Cadastrar Personagem</button>
+			
+ 			</div>
+ 			</fieldset>
+	</form>
+</body>
 </html>
