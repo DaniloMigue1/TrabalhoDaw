@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Formulário</title>
+	</head>
+	
+	<body id="corpo">
+		<h1>Cadastro de Personagem</h1>
+
+		<form action="Cadastro.java" method="post">
+			<fieldset>
+				<legend>Personagem</legend>
+
+				<p><label for="nome">Nome:</label>
+					<input type="text" id="nome" size="25" maxlength="30" placeholder="Nome completo" autofocus>
+				</p>
+
+				
+					<legend>Sexo:</legend>
+
+					<input type="radio" id="masculino" name="sexo" value="M">
+					<label for="masculino">Masculino</label>
+
+					<input type="radio" id="feminino" name="sexo" value="F">
+					<label for="feminino">Feminino</label>
+				
+					<p><label for="pais">País:</label>
+					<select id="pais">
+						<option>Escolha o País</option>
+							<option value="BR">Brasil</option>
+							<option value="US">Estados Unidos</option>
+							<option value="DV">Davi</option>
+							<option value="DM">Danilo</option>
+							<option value="ES">Espírito Santo</option>
+							<option value="MG">Minas Gerais</option>
+							<option value="RJ">Rio de Janeiro</option>
+							<option value="SP">São Paulo</option>
+					</select>
+			</fieldset>
+
+			
+				">
+			</p>
+		</form>
+	</body>
+</html>
